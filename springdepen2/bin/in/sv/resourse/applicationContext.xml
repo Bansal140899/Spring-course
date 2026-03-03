@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean class= "in.sv.beans.Address" id = "addrId">
+   <property name="Houseno"  value=" 1008"/>
+      <property name="city"  value="kota"/>
+         <property name="pincode"  value="325009"/>
+   
+   
+   
+   
+   
+   
+   </bean>
+   
+   <bean class= "in.sv.beans.Student" id = "stdId">
+   <property name="name"  value="ajay"/>
+      <property name="roll"  value="2556"/>
+         <property name="address"  ref="addrId"/>
+   
+   
+   
+   
+   
+   
+   </bean>
+
+</beans>

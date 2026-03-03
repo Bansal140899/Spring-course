@@ -1,0 +1,32 @@
+package in.sv.beans;
+
+public class Address {
+	private int  Houseno;
+	private String city;
+	private int pincode;
+	public int getHouseno() {
+		return Houseno;
+	}
+	public void setHouseno(int houseno) {
+		Houseno = houseno;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public int getPincode() {
+		return pincode;
+	}
+	public void setPincode(int pincode) {
+		this.pincode = pincode;
+	}
+	@Override
+	public String toString() {
+		return "Address [Houseno=" + Houseno + ", city=" + city + ", pincode=" + pincode + "]";
+	}
+	
+	
+
+}

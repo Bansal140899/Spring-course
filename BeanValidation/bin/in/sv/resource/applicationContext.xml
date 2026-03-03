@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   
+   <bean class= "in.sv.beans.Student" id = "stdId">
+   <property name="name"  value="ajay"/>
+      <property name="rollno"  value="0"/>
+         <property name="phoneno"  value="9887406"/>
+   
+   
+   
+   
+   
+   
+   </bean>
+
+</beans>
