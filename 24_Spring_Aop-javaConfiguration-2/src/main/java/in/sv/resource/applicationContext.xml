@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+    <!-- service class bean -->
+    <bean id="serviceBean" class="in.sv.service.App"/>
+
+    <!-- aspect class bean -->
+    <bean id="loginAspect" class="in.sv.aspect.Login"/>
+
+    <!-- Proxy factory -->
+    <bean id="proxyBean"
+          class="org.springframework.aop.framework.ProxyFactoryBean">
+
+        <!-- target object -->
+        <property name="target" ref="serviceBean"/>
+
+        <!-- interceptor -->
+        <property name="interceptorNames">
+            <list>
+                <value>loginAspect</value>
+            </list>
+        </property>
+
+    </bean>
+
+</beans>
