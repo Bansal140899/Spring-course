@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"https://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+  <class name="in.sv.entity.Student" table="std_marks">
+  
+    <id name="id" column="std_id">
+        <generator class="increment"/>
+    </id>
+    
+    <property name="name" column="name"/>
+    <property name="email" column="email"/>
+    <property name="marks" column="marks"/>
+  
+  </class>
+
+</hibernate-mapping>
